@@ -1,0 +1,52 @@
+@keyframes lefttoright {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+main {
+    height: calc(100vh - 7vh);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+    text-align: center;
+    animation-name: lefttoright;
+    animation-duration: 1s;
+}
+
+.principal h2 {
+    letter-spacing: 2px;
+    color: rgb(190, 190, 190);
+}
+
+.texts {
+    line-height: 25px;
+}
+
+.principal p {
+    text-align: center;
+    max-width: 600px;
+}
+
+.principal h2 {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .principal p {
+        font-size: 18px;
+    }
+}
